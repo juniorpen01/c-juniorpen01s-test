@@ -5,7 +5,7 @@ typedef enum { None, Some } Variant;
 
 #define OPTION(T)                                                              \
                                                                                \
-  typedef struct Option_##T {                                                  \
+  typedef struct {                                                             \
     T value;                                                                   \
     Variant variant;                                                           \
   } Option_##T;                                                                \

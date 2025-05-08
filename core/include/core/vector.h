@@ -8,7 +8,7 @@
 #include <core/realloc.h>
 
 #define VECTOR(T)                                                              \
-  typedef struct Vector_##T {                                                  \
+  typedef struct {                                                             \
     T *data;                                                                   \
     size_t size, capacity;                                                     \
   } Vector_##T;                                                                \
