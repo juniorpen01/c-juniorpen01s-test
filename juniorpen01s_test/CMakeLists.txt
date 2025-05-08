@@ -4,7 +4,6 @@ add_library(juniorpen01s_test ${sources})
 target_include_directories(juniorpen01s_test PRIVATE include)
 target_link_libraries(juniorpen01s_test PRIVATE core)
 
-include(CTest)
 if(BUILD_TESTING)
 	file(GLOB_RECURSE testSources tests/*_test.c)
 	foreach(testSource IN LISTS testSources)

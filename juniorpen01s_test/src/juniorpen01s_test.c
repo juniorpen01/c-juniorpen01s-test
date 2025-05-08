@@ -1,3 +1,6 @@
+#include <assert.h>
+#include <stdbool.h>
+
 #include <juniorpen01s_test.h>
 
-// int main(void) { FOO(Tests_New()); }
+__attribute__((constructor)) int main(void) { assert(false); }
