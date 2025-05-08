@@ -10,8 +10,7 @@
 #define VECTOR(T)                                                              \
   typedef struct Vector_##T {                                                  \
     T *data;                                                                   \
-    size_t size;                                                               \
-    size_t capacity;                                                           \
+    size_t size, capacity;                                                     \
   } Vector_##T;                                                                \
                                                                                \
   Vector_##T Vector_##T##_New(void) {                                          \
