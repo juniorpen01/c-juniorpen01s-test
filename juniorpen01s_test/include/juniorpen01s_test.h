@@ -1,7 +1,7 @@
 #ifndef TEST_C
 #define TEST_C
 
-#include "core/malloc.h"
+#include <core/malloc.h>
 #include <core/vector.h>
 
 typedef void (*Test)(void);
